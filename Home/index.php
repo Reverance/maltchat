@@ -5,14 +5,7 @@ $name = $_SESSION['name'];
 if (!isset($_SESSION['id'])) {
   header("Location: ../Login/inc/lgt.inc.php");
 }
-$a = '"nav-link active"';
-$b = '"nav-link"';
-$c = '"nav-link"';
-$d = '"nav-link"';
-$e = '"nav-link"';
-$f = '"nav-link"';
-$g = '"nav-link"';
-$h = '"nav-link"';
+$a = 'class="active"';
 ?>
 <!DOCTYPE html>
 <html>

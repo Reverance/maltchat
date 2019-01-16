@@ -5,12 +5,7 @@ $name = $_SESSION['name'];
 if (!isset($_SESSION['id'])) {
   header("Location: ../Login/inc/lgt.inc.php");
 }
-$a = '"nav-link"';
-$b = '"nav-link"';
-$c = '"nav-link"';
-$d = '"nav-link"';
-$e = '"nav-link active"';
-$f = '"nav-link"';
+$e = 'class="active"';
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,14 +27,14 @@ $f = '"nav-link"';
 					<input type="text" id="url" placeholder="E.g. https://www.youtube.com/watch?v=HuIb3XTQVJw">
 					<input type="submit" id="button" placeholder="Refresh" onclick="loadVideo();">
 				</form>
-				<div id="video"><iframe src="https://www.youtube.com/embed/HuIb3XTQVJw" style="width: 100%; height:100%;"></iframe></div>
+				<div id="video"><iframe src="https://www.youtube.com/embed?max-results=1&showinfo=0&rel=0&listType=user_uploads&list=PewDiePie" style="width: 100%; height:100%;"></iframe></div>
 			</div>
 		</div>
 		<script type="text/javascript">
 			function loadVideo() {
 				var url = $("#url").val();
 				if (url == "") {
-					$("#video").html('<iframe src="https://www.youtube.com/embed/HuIb3XTQVJw" style="width: 100%; height:100%;"></iframe>');
+					$("#video").html('<iframe src="https://www.youtube.com/embed?max-results=1&showinfo=0&rel=0&listType=user_uploads&list=PewDiePie" style="width: 100%; height:100%;"></iframe>');
 					$("#url").val("Error; url invalid try again");
 				}
 				$.post("videoLoad.php",{url:url},function(data){

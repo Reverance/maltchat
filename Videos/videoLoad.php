@@ -18,7 +18,7 @@ if (strpos($url, 'youtube') > 0) {
     $html = '<iframe src="'.$url.'" style="width: 100%; height:100%;"/>';
     die($html);
 } else {
-	$html = '<iframe src="https://www.youtube.com/embed/HuIb3XTQVJw" style="width: 100%; height:100%;"></iframe>';
+	$html = '<iframe src="https://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=PewDiePie" style="width: 100%; height:100%;"></iframe>';
 	die($html);
 }
 

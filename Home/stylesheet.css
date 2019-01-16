@@ -28,6 +28,7 @@ body {
 	z-index: 900;
 }
 #container {
+	margin-top: 30px; 
 	z-index: 950;
 	width: 100%;
 }
