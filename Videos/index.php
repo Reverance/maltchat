@@ -1,9 +1,7 @@
 <?php
 session_start();
-include '../Check/check.php';
-$name = $_SESSION['name'];
 if (!isset($_SESSION['id'])) {
-  header("Location: ../Login/inc/lgt.inc.php");
+  header("Location: ../Login/logout.php");
 }
 $e = 'class="active"';
 ?>
