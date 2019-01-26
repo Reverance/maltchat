@@ -50,6 +50,8 @@ body {
 	background-color: #662525;
 }
 #messageHeaderImage {
+	margin-left: 1vw;
+	margin-right: 1vw;
 	float: left;
 	height: 90%;
 	border-radius: 100%;
@@ -59,7 +61,9 @@ body {
 	right: 0.25%;
 }
 #messageHeaderText {
-	margin-left: 2%;
+	margin-left: 1vw;
+	font-size: 7.5vh;
+	color: #fff;
 }
 #messageBox {
 	width: 100%;
@@ -67,6 +71,7 @@ body {
 	position: absolute;
 	top: 10%;
 	left: 0;
+	overflow-y: auto;
 }
 #messageForm {
 	position: absolute;
@@ -85,5 +90,9 @@ body {
 	background-color: #662525;
 	color: #fff;
 	border:none;
-	padding: 5px;
+	font-size: 5vh;
+	padding-left: 1vw;
 }
+
+@media (max-height: 430px) {#box{top: 53.75px; height: 322.5px;}#messageHeaderText{font-size:32.25px;}#message{font-size:21.5px;}body{overflow-y: auto;}}
+@media (max-width: 790px) {#box{left: 98.75px; width: 592.5px;}body{overflow-x: auto;}}

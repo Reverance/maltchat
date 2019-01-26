@@ -21,9 +21,8 @@ $e = 'class="active"';
 		<div id="container">
 			<?php include "../Navbar/navbar.php" ?>
 			<div id="box">
-				<form action="#" onclick="return false;">
+				<form action="#" onsubmit="loadVideo(); return false;">
 					<input type="text" id="url" placeholder="E.g. https://www.youtube.com/watch?v=HuIb3XTQVJw">
-					<input type="submit" id="button" placeholder="Refresh" onclick="loadVideo();">
 				</form>
 				<div id="video"><iframe src="https://www.youtube.com/embed?max-results=1&showinfo=0&rel=0&listType=user_uploads&list=PewDiePie" style="width: 100%; height:100%;"></iframe></div>
 			</div>
@@ -31,6 +30,7 @@ $e = 'class="active"';
 		<script type="text/javascript">
 			function loadVideo() {
 				var url = $("#url").val();
+				console.log(url);
 				if (url == "") {
 					$("#video").html('<iframe src="https://www.youtube.com/embed?max-results=1&showinfo=0&rel=0&listType=user_uploads&list=PewDiePie" style="width: 100%; height:100%;"></iframe>');
 					$("#url").val("Error; url invalid try again");

@@ -38,22 +38,24 @@ body {
 #box {
 	width: 75%;
 	height: 75%;
-	margin-top: 5%;
-	margin-left: 12.5%;
-	background-color: #fff;
+	position: absolute;
+	top: 12.5%;
+	left: 12.5%;
+	background-color: #c14b4b;
 }
 #url {
 	float: left;
-	width: 75%;
+	width: 100%;
 	height: 5%;
-}
-#button {
-	margin-left: 0.5%;
-	float: left;
-	width: 24%;
-	height: 5%;
+	box-sizing:border-box;
+	background-color: #662525;
+	color: #fff;
+	border:none;
 }
 #video {
 	width: 100%;
 	height: 100%;
 }
+
+@media (max-height: 430px) {#box{top: 53.75px; height: 322.5px;}}
+@media (max-width: 790px) {#box{left: 98.75px; width: 592.5px;}body{overflow-x: auto;}}
