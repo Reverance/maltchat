@@ -6,9 +6,12 @@ if (!isset($_SESSION['id'])) {
   die("0");
 }
 
-$sql = "SELECT * FROM comments ORDER BY Tim ASC LIMIT 100";
+$sql = "SELECT * FROM comments ORDER BY id ASC LIMIT 100";
 $result = mysqli_query($mainDBConn,$sql);
 $id = $_SESSION['id'];
+$target = $_POST['target'];
+
+$array1 = array();
 
 while ($row = mysqli_fetch_row($result)) {
 	//vars for chat message
@@ -17,35 +20,25 @@ while ($row = mysqli_fetch_row($result)) {
 	$nm = $row['2']; //name
 	$msg = $row['4']; //message
 	$tim = $row['5']; //timestamp
+
+
 	$im = $row['3']; //icon
-	if ($author == $id) {
-		echo "
-		<div id='message$mid' style='float: right;'>
-			$msg
-			<br>
-			$tim
-			<br>
-		</div>
-		<br>
-		<br>
-		<br>
-		";
-	} else {
-		echo "
-		<div id='message$mid' style='float: left;'>
-			<img src='$im' style='width:25px;'>
-			<br>
-			$nm : $msg
-			<br>
-			$tim
-			<br>
-		</div>
-		<br>
-		<br>
-		<br>
-		<br>
-		";
+	if (strpos($im,"https") != 'false') {
+		$im = "https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-shadow-circle-512.png";
 	}
+
+
+	if ($target == "all") {
+		$array2 = array($mid,$author,$nm,$msg,$tim,$im);
+	}
+
+	if ($target == "id") {
+		$array2 = $mid;
+	}
+
+
+	array_push($array1, $array2);
+
 }
 
-?>
+echo json_encode($array1);

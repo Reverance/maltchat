@@ -32,3 +32,66 @@ body {
 	z-index: 950;
 	width: 100%;
 }
+#box {
+	width: 75%;
+	height: 75%;
+	background-color: #c14b4b;
+	z-index: 950!important;
+	position: absolute;
+	top: 12.5%;
+	left: 12.5%;
+}
+#profileHeader {
+	height: 10%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #662525;
+}
+#profileHeaderImage {
+	margin-left: 1vw;
+	margin-right: 1vw;
+	float: left;
+	height: 6.75vh;
+	width: 6.75vh;
+	border-radius: 100%;
+	background-color: #fff;
+	position: relative;
+	top: 5%;
+	right: 0.25%;
+}
+#profileHeaderImage2 {
+	margin-left: 1vw;
+	margin-right: 1vw;
+	float: left;
+	height: 90%;
+	position: absolute;
+	top: 5%;
+	right:0.25%;
+	cursor: pointer;
+}
+#profileHeaderText {
+	margin-left: 1vw;
+	font-size: 7.5vh;
+	color: #fff;
+}
+#profileBox {
+	width: 100%;
+	height: 90%;
+	position: absolute;
+	top: 10%;
+	left: 0;
+	overflow-y: auto;
+}
+#profileBoxBio {
+	width: 96%;
+	height: 96%;
+	position: absolute;
+	top: 2%;
+	left: 2%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-size: 5vh;
+	color: #fff;
+}

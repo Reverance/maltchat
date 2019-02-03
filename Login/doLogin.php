@@ -14,7 +14,7 @@ if ($uid == "") {
 $pwd = hash('sha256',$pwd);
 
 $sql0 = "SELECT * FROM users WHERE uid='$uid' and pwd='$pwd'";
-$sql1 = "UPDATE users SET online=1 WHERE uid='$useruid'";
+$sql1 = "UPDATE users SET online=1, tim=now() WHERE uid='$uid'";
 
 if (!$result = mysqli_query($mainDBConn, $sql0)) {
 

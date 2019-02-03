@@ -1,0 +1,17 @@
+div.body {
+	margin: auto;
+	text-align: left;
+	width: 80%;
+	font-size: 100%;
+}
+h1 {
+	text-align: center;
+	color: #fff;
+}
+p {
+	margin-left: 10px;
+	color: #fff;
+}
+button:hover {
+    opacity: 0.8;
+}

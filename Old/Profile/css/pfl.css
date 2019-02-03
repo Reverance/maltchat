@@ -1,0 +1,50 @@
+div.profile {
+	background-color: #004fa5;;
+	width: 80%;
+	margin: auto;
+}
+div.profile div.head {
+	margin: auto;
+	height: 150px;
+	width: 95%;
+}
+div.profile div.head div.image{
+	background-color: #6400ff;
+	height: 150px;
+	width: 150px;
+	float: left;
+}
+div.profile div.head div.title{
+	margin-left: 40px;
+	background-color: #6400ff;
+	font-size: 125%;
+	height: 100%;
+	width: 60%;
+	color: #fff;
+	float: left;
+}
+div.profile div.body {
+	margin: auto;
+	height: 500px;
+	width: 95%;
+	background-color: #6400ff;
+	overflow-y: scroll;
+}
+div.profile div.body div.bio {
+	background-color: #6400ff;
+	float: right;
+	width: 100%;
+	color: #fff;
+	height: 100%;
+}
+.imgforprofile {
+	background-color: #6400ff;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    margin-left: 15px;
+}

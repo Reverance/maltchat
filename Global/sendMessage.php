@@ -9,7 +9,7 @@ $message = strip_tags($message);
 $name = $_SESSION['name'];
 $pic = $_SESSION['icn'];
 
-if (!isset($_SESSION['id']) || !isset($message)) {
+if (!isset($_SESSION['id']) || !isset($message) || $message == "") {
   die("0");
 }
 

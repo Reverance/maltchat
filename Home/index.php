@@ -10,10 +10,7 @@ $a = 'class="active"';
 	<head>
 		<title>Login</title>
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
-		<script src="https://www.google.com/jsapi"></script>
-		<script type="text/javascript">
-			google.load("jquery", "1.3.2");
-		</script>
+		<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<div id="overlay"></div>

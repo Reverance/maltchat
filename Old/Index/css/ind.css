@@ -1,0 +1,9 @@
+body{
+}
+a:hover, a:visited, a {
+	color: #007BFF;
+	text-decoration: none;
+}
+h1 {
+	font-size: 150%;
+}

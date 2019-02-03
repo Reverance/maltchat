@@ -52,7 +52,7 @@
 
 <ul id="header">
   <li id="item"><a href="../Home" <?php echo $a ?>>Home</a></li>
-  <li id="item"><a href="../Global" <?php echo $b ?>>Global</a></li>
+  <li id="item"><a href="../Chats" <?php echo $b ?>>Chats</a></li>
   <li id="item"><a href="../Online" <?php echo $c ?>>Online</a></li>
   <li id="item"><a href="../Videos" <?php echo $e ?>>Videos</a></li>
   <li id="item" style="float: right;"><a href="#" onclick="logout();">Logout</a></li>

@@ -1,0 +1,28 @@
+body {
+	text-align: center;
+}
+.frm {
+	background: #33FF33;
+	width: 100%;
+	margin: auto;
+	color: #FF3333;
+	text-align: left;
+}
+.greenbod {
+	margin: auto;
+	width: 30%;
+	height: 100%;
+	padding: 3%;
+	text-align: left;
+}
+select {
+	width: 100%;
+	cursor: pointer;
+	border: none;
+}
+button {
+	width: 100%;
+	border: none;
+	background: #FFFFFF;
+	cursor: pointer;
+}
